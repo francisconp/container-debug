@@ -7,7 +7,7 @@ ENV HOME_DIR /app
 # Add python3 command to PATH
 ENV PATH $PATH,/usr/bin/
 
-# Install pip, dig, nc, ss, traceroute ......
+# Install pip, dig, nc, openssl, ss, traceroute ......
 RUN dnf install -y python3-pip bind-utils nc iperf3 httpie openssl python3-flask \
     traceroute iproute \
     && dnf clean all
